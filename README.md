@@ -1,3 +1,5 @@
+
+
 # Physics Simulation
 
 This project is a simple 2D physics simulation written in C++ using the SFML graphics library. The simulation demonstrates the motion of particles under the influence of gravitational sources.
@@ -8,6 +10,10 @@ This project is a simple 2D physics simulation written in C++ using the SFML gra
 - Hundreds or thousands of particles, each affected by all gravity sources.
 - Real-time visualization using SFML.
 - Color gradient for particles based on their index.
+
+## Demo
+
+![Demo](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGpnb3hldXc3dGduM25xNTdmem1vM2Zzem51OHJueWVtazB4ODFsdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Z1lsQp1AG9gzXWRyAf/giphy.gif)
 
 ## Algorithm Overview
 
