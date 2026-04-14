@@ -1,16 +1,16 @@
 HEADERS := $(wildcard src/headers/*.hpp) # nothing
 
+# WINDOWS
 compile:
-	@g++ -c main.cpp -IC:/SFML-3.0.0/include
+	@g++ -c main.cpp
 
 link:
-	@g++ main.o -o sfml-app -LC:/SFML-3.0.0/lib -lsfml-graphics -lsfml-window -lsfml-system
+	@g++ main.o -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system
 
 execute:
 	@./sfml-app
 
 remove:
-	@del sfml-app.exe
-	@del main.o
+	@rm -f sfml-app main.o
 
 build: compile link execute remove

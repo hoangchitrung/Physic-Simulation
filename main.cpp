@@ -30,7 +30,7 @@ sf::Color map_val_to_color(float value) // value is 0-1
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode({1600, 900}), "Physics Simulation");
+    sf::RenderWindow window(sf::VideoMode(1600, 900), "Physics Simulation");
     window.setFramerateLimit(60);
 
     // GravitySource source(800, 500, 7000);
@@ -42,7 +42,7 @@ int main()
     sources.push_back(GravitySource(500, 500, 7000));
     sources.push_back(GravitySource(1200, 500, 7000));
 
-    int num_particle = 2000;
+    int num_particle = 100;
 
     std::vector<Particle> particles;
 
@@ -60,9 +60,10 @@ int main()
 
     while (window.isOpen())
     {
-        while (const std::optional event = window.pollEvent())
+        sf::Event event;
+        while (window.pollEvent(event))
         {
-            if (event->is<sf::Event::Closed>())
+            if (event.type == sf::Event::Closed)
                 window.close();
         }
 
