@@ -42,7 +42,7 @@ int main()
     sources.push_back(GravitySource(500, 500, 7000));
     sources.push_back(GravitySource(1200, 500, 7000));
 
-    int num_particle = 100;
+    int num_particle = 1000;
 
     std::vector<Particle> particles;
 
